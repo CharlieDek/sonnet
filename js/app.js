@@ -3,6 +3,8 @@ var g_state = {
     loadingSonnet: false,
 };
 
+$("#subject").focus();
+
 function processSonnetRes(res) {
     let sonnetText = res.replace(/(?:\r\n|\r|\n)/g, '<br>');
     $("#sonnet_text").html(sonnetText);
