@@ -24,7 +24,7 @@ html, body, button, select, textarea {
 }
 
 h2:hover {
-  color: var(--robot_eyes);
+  /* color: var(--robot_eyes); */
 }
 
 .optionStuff {
@@ -47,6 +47,16 @@ h2:hover {
 
 .optionStuff:focus {
   outline: none !important;
+}
+
+#silverBotImg {
+  position: absolute;
+  left: 5px;
+  top: -10px;
+  height: 64px;
+  width: 64px;
+  display: none;
+  z-index: -1;
 }
 
 body {

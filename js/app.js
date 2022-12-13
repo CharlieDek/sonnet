@@ -68,3 +68,9 @@ $("#sonnet_btn").click(function() {
         makeSonnetReq(poet, style, subject);
     }
 });
+
+$( "#RobotHeader" ).mouseenter( function() {
+    $("#silverBotImg").show();
+}).mouseleave(function() {
+    $("#silverBotImg").hide();
+});
