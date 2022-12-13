@@ -18,7 +18,8 @@
 html, body, button, select, textarea {
     font-family: 'Goudy Bookletter 1911', serif;
     text-align: center;
-    cursor: url("../img/cursor.png"), auto;    
+    cursor: url("../img/cursor.png"), auto;
+    -webkit-tap-highlight-color: transparent;    
     /* background-color: var(--background_color); */
 }
 
