@@ -3,32 +3,32 @@
     /* main colors */
     --regular_text:#111111;
     --background_color: rgb(255, 255, 245);
-    --particles_background_color: #131413;
-    --particles_color: #f652ac;
-    --header_hover: #fe8e8e;
-    --header_contrast_color: #e0e0e0;
-    /* TODO mess w colors here */
-    --hover_link: rgb(255, 231, 253);
-    --highlight_hover: #ffffff8e;
-    --highlight_hover_accent: #f652ac5b;
-    --bg_gradient_color_1: #3331AC;
-    --bg_gradient_color_2: #fe8e8e0f;
-    --highlight_hover_color_1: #fe8e8e;
-    --highlight_hover_color_2: #8eeffe26;
-    --highlight_hover_color_2_alt: #ff000054;
-    --visited_color: #0027bb;
-    --link_color: #0027bb;
-    --accent_color: rgb(255, 231, 253);
-    --button_hover_color: #fe8e8e;
-    --button_hover_color_2: transparent;
-    --small_contrast_bio_color: #e0e0e0;
     --shadow_color: rgb(36, 31, 34);
+    --bg_gradient_color_1: #cac39c;
+    --bg_gradient_color_2: #fe8e8e0f;    
+    --option_gradient_color_1: #ffffff;
+    --option_gradient_color_2: #cac39c4b;    
+    --highlight_background: #111111;    
+    --highlight_text: rgb(255, 255, 245);
 }
+
 
 html, body, button, select {
     font-family: 'Goudy Bookletter 1911', serif;
     text-align: center;
+    /* background-color: var(--background_color); */
+}
+
+.optionStuff {
+    border: 2px solid black;
     background-color: var(--background_color);
+    background: linear-gradient(to bottom right, var(--option_gradient_color_1), var(--option_gradient_color_2)), url(../img/noise.svg);
+}
+
+.optionStuff:hover {
+    box-shadow:
+    -10px 0 150px var(--regular_text),
+    3px 2px var(--shadow_color);
 }
 
 body {
@@ -37,6 +37,8 @@ body {
     padding: 0;
     position: relative;
     z-index: -1;
+    /* background: radial-gradient(circle at 50% 50%, var(--bg_gradient_color_1), var(--bg_gradient_color_2)), url(../img/noise.svg); */
+    background: linear-gradient(to top left, var(--bg_gradient_color_1), var(--bg_gradient_color_2)), url(../img/noise.svg);
 }
 
 body::before {
@@ -61,14 +63,15 @@ td {
 
 #sonnet_btn {
     margin: 15px;
-    border: 2px solid black;
-    background-color: var(--background_color);
+    /* border: 2px solid black; */
+    /* background-color: var(--background_color); */
     cursor: pointer;
 }
 
 #sonnet_btn:hover {
     background-color: var(--regular_text);
     color: var(--background_color);
+    background: linear-gradient(to top right, var(--regular_text), var(--option_gradient_color_2)), url(../img/noise.svg);    
 }
 
 select:required:invalid {
@@ -79,4 +82,13 @@ select:required:invalid {
   }
   option {
     color: #000;
+  }
+
+  ::selection {
+    background: var(--highlight_background); /* WebKit/Blink Browsers */
+    color: var(--highlight_text); /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    background: var(--highlight_background); /* Gecko Browsers */
+    color: var(--highlight_text); /* Gecko Browsers */
   }

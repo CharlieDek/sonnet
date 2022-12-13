@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <link rel="shortcut icon" type="img/jpg" href="img/favicon64.png"/>    
+    <link rel="shortcut icon" type="img/jpg" href="img/purple_fave_64.png"/>
     <link rel="stylesheet"media="screen" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,16 +22,16 @@
 <table id="optionsTable">
     <tr>
         <td>
-            <textarea id="subject" placeholder="What is the poem about?" rows="1" cols="30" maxlength="50"></textarea>
+            <textarea id="subject" class="optionStuff" placeholder="What is the poem about?" rows="1" cols="30" maxlength="150"></textarea>
         </td>
     </tr>
     <tr>
         <td>
-            <textarea id="style" placeholder="What is the style of the poem?" rows="1" cols="30" maxlength="50"></textarea>
+            <textarea id="style" class="optionStuff" placeholder="What is the style of the poem?" rows="1" cols="30" maxlength="150"></textarea>
         </td>
     </tr>
     <tr>
-        <td><select class="poetSelect" id="poetSelect">
+        <td><select class="optionStuff" id="poetSelect">
             <option value="" disabled selected>In the style of which poet?</option>
             <option value="millay">Edna St. Vincent Millay</option>
             <option value="shakespeare">William Shakespeare</option>
@@ -41,7 +41,7 @@
     </tr>
 </table>
 
-<button id="sonnet_btn">Make Sonnet</button>
+<button id="sonnet_btn" class="optionStuff">Make Sonnet</button>
 <p id="sonnet_text"></p>
 
 <!-- scripts -->
