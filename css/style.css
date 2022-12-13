@@ -28,6 +28,7 @@ h2:hover {
 }
 
 .optionStuff {
+    border-radius: 0px;
     font-family: 'Goudy Bookletter 1911', serif;  
     color: var(--regular_text);
     border: 1px solid black;
