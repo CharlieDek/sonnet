@@ -19,7 +19,13 @@ html, body, button, select, textarea {
     font-family: 'Goudy Bookletter 1911', serif;
     text-align: center;
     cursor: url("../img/cursor.png"), auto;
-    -webkit-tap-highlight-color: transparent;    
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;    
     /* background-color: var(--background_color); */
 }
 
@@ -42,6 +48,10 @@ h2:hover {
     box-shadow:
     -10px 0 150px var(--robot_purple),
     3px 3px var(--shadow_color);
+}
+
+.optionStuff:focus {
+  outline: none !important;
 }
 
 body {
