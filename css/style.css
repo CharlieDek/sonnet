@@ -2,14 +2,14 @@
 
     /* main colors */
     --regular_text:#111111;
-    --background_color: rgb(255, 255, 245);
-    --shadow_color: rgb(36, 31, 34);
+    --background_color: #fffff5;
+    --shadow_color: #241f22;
     --bg_gradient_color_1: #cac39c;
     --bg_gradient_color_2: #fe8e8e0f;    
     --option_gradient_color_1: #ffffff;
     --option_gradient_color_2: #cac39c4b;    
     --highlight_background: #111111;    
-    --highlight_text: rgb(255, 255, 245);
+    --highlight_text: #fffff5;
     --robot_eyes: #a87745;
     --robot_purple: #b097cd;
 }
@@ -77,16 +77,14 @@ td {
     width: 100px;
 }
 
-/* #sonnet_text {} */
+#sonnet_text {
+  margin-left: calc(15% + 5px);
+  margin-right: calc(15% + 5px);
+}
 
 #sonnet_btn {
     margin: 15px;
     cursor: url("../img/hand-cursor.png"), auto;
-}
-
-#sonnet_btn:hover {
-    /* background-color: var(--regular_text); */
-    /* color: var(--background_color); */
 }
 
 select:required:invalid {
