@@ -36,8 +36,11 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
-  }
-  body::before {
+    z-index: -1;
+}
+
+body::before {
+    z-index: -1;
     content: '';
     position: absolute;
     top: -25px;
