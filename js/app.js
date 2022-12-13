@@ -57,8 +57,10 @@ $("#sonnet_btn").click(function() {
         } else if (!subject) {
             return;
         }
-        $("#subject").val("");
-        $("#style").val("");
+        // $("#subject").val("");
+        // $("#style").val("");
+        $("#optionsTable").hide();
+        $("#sonnet_btn").hide();
         $("#sonnet_text").html("Loading...");
         g_state.loadingSonnet = true;
         makeSonnetReq(poet, style, subject);
